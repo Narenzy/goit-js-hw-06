@@ -1,3 +1,20 @@
+class StringBuilder {
+  #value;
+
+  constructor(initialValue) {
+    this.#value = initialValue;
+  }
+  getValue() {
+    return thhis.#value;
+  }
+  padEnd(str) {
+    this.#value = this.#value + str;
+  }
+  padStart(str) {
+    this.#value = str + this.#value;
+  }
+}
+
 const builder = new StringBuilder('.');
 console.log(builder.getValue()); // "."
 builder.padStart('^');
